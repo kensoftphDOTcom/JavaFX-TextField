@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kensoftph.textfield.TextFieldController">
+   <children>
+      <HBox prefHeight="469.0" prefWidth="555.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="469.0" prefWidth="301.0" spacing="10.0">
+               <children>
+                  <Label text="JavaFX TextField Tutorial">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textField" prefHeight="45.0" prefWidth="279.0" />
+                  <Label fx:id="result" text="Result">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="469.0" prefWidth="298.0" spacing="10.0">
+               <children>
+                  <Button fx:id="selectAll" mnemonicParsing="false" onAction="#selectAll" prefHeight="25.0" prefWidth="336.0" text="Select All">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deselect" mnemonicParsing="false" onAction="#deselect" prefHeight="25.0" prefWidth="359.0" text="Deselect">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="selectNextWord" mnemonicParsing="false" onAction="#selectNextWord" prefHeight="25.0" prefWidth="412.0" text="Select Next Word">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="selectPrevWord" mnemonicParsing="false" onAction="#selectPrevWord" prefHeight="25.0" prefWidth="344.0" text="Select Previous Word">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="selectForward" mnemonicParsing="false" onAction="#selectForward" prefHeight="25.0" prefWidth="290.0" text="Select Forward">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="selectBackward" mnemonicParsing="false" onAction="#selectBackward" prefHeight="25.0" prefWidth="474.0" text="Select Backward">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
